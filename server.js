@@ -5,7 +5,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
     cors: {
-        origin: "http://157.245.8.31:3000",
+        origin: "*",
         methods: [ "GET", "POST" ]
     }
 })
